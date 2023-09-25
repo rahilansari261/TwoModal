@@ -1,4 +1,4 @@
-
+import { useDispatch } from "react-redux";
 import {
   closeAll,
   closeFirst,
@@ -34,7 +34,12 @@ export default function Home() {
   };
   return (
     <div>
-      <div className="bg-gray-500 border text-base text-red-700" onClick={openFirstModal}>Open First Modal</div>
+      <div
+        className="bg-gray-500 border text-base text-red-700"
+        onClick={openFirstModal}
+      >
+        Open First Modal
+      </div>
       <Modal1>
         <Modal1Content
           modalTitle="Add User"
